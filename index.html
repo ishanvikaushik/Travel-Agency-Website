@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dreamscape Destinations</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    
+    @keyframes changeBackground {
+      0% {
+        background-image: url('https://i.pinimg.com/736x/e6/9c/9e/e69c9ef23d457398baa90d94647a61d3.jpg');
+      }
+      33% {
+        background-image: url('https://i.pinimg.com/736x/bc/3d/86/bc3d867c4dad9908f22daadac140d527.jpg');
+      }
+      66% {
+        background-image: url('https://i.pinimg.com/736x/34/6a/81/346a81064f914c7173d7707f4b05d109.jpg');
+      }
+      100% {
+        background-image: url('https://i.pinimg.com/736x/c8/ec/5e/c8ec5eb14122ee4ad0a512070e36cc43.jpg');
+      }
+    }
+
+    .header-bg {
+      height: 24rem; 
+      animation: changeBackground 10s infinite;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    
+    .hexagon {
+      width: 500px;
+      height: 300px;
+      background-color: #ccc;
+      position: relative;
+      margin: 0 auto;
+      clip-path: polygon(
+        50% 0%, 
+        100% 25%, 
+        100% 75%, 
+        50% 100%, 
+        0% 75%, 
+        0% 25%
+      );
+    }
+
+    .hexagon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      clip-path: polygon(
+        50% 0%, 
+        100% 25%, 
+        100% 75%, 
+        50% 100%, 
+        0% 75%, 
+        0% 25%
+      );
+    }
+
+    
+    .review-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      max-width: 300px;
+      margin: 10px;
+    }
+
+    .review-card p {
+      font-style: italic;
+      color: #555;
+    }
+
+    .review-card .name {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .review-card .rating {
+      color: #facc15;
+    }
+  </style>
+</head>
+<body class="font-sans  bg-gray-100">
+
+  
+  <nav class="bg-gray-800">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="index.html" class="text-white text-xl font-bold">Dreamscape Destinations</a>
+      <div class="space-x-4">
+        <a href="index.html" class="text-white hover:underline">Home</a>
+        <a href="destinations.html" class="text-white hover:underline">Destinations</a>
+        <a href="packages.html" class="text-white hover:underline">Packages</a>
+        <a href="blog.html" class="text-white hover:underline">Blog</a>
+        <a href="contact.html" class="text-white hover:underline">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  
+  <header class="header-bg flex items-center justify-center">
+    <div class="bg-blue-600 bg-opacity-0 p-6 rounded-lg text-center">
+      <h1 class="text-white text-5xl font-bold">Explore the World with Us</h1>
+    </div>
+  </header>
+
+  
+  <section class="container mx-auto px-4 py-10 space-y-12">
+    <h1 class="text-3xl font-bold mb-6 text-center">Welcome to Dreamscape Destinations</h1>
+    <p class="text-gray-800 mb-6 text-center"><i>Embark on the adventure of a lifetime with Dreamscape Destinations. Whether you're dreaming of pristine beaches, towering mountain peaks, or vibrant cityscapes, we provide curated travel experiences that cater to every type of explorer.<br> Our expert team handpicks the most breathtaking destinations and exclusive packages to ensure that your journey is seamless, exciting, and unforgettable.<br> Let us turn your travel dreams into reality—your next great adventure starts here!</i></p>
+    
+    
+    <div class="flex flex-wrap lg:flex-nowrap items-center">
+      <div class="w-full lg:w-1/2">
+        <div class="hexagon translate-x-6 hover:scale-125">
+          <img src="https://i.pinimg.com/736x/39/7a/e4/397ae447aa778b63beb5629a4fba02c4.jpg" alt="Destination 1">
+        </div>
+      </div>
+      <div class="w-full lg:w-1/2 px-6 hover:scale-125">
+        <h2 class="text-2xl font-bold mb-4">Exotic Beaches</h2>
+        <p class="text-gray-700">Relax on the world’s most beautiful beaches, with crystal-clear waters and golden sands. Perfect for your next vacation getaway!</p>
+      </div>
+    </div>
+
+    
+    <div class="flex flex-wrap lg:flex-nowrap items-center">
+      <div class="w-full lg:w-1/2 order-2 lg:order-1 px-6 hover:scale-125">
+        <h2 class="text-2xl font-bold mb-4">Mountain Adventures</h2>
+        <p class="text-gray-700">Experience thrilling mountain adventures, breathtaking views, and the thrill of conquering peaks with guided tours.</p>
+      </div>
+      <div class="w-full lg:w-1/2 order-1 lg:order-2">
+        <div class="hexagon translate-x-6 hover:scale-125">
+          <img src="https://i.pinimg.com/736x/2e/bc/75/2ebc75b362e7944cc48e85cd74671a3b.jpg" alt="Destination 2">
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="flex flex-wrap lg:flex-nowrap items-center">
+      <div class="w-full lg:w-1/2">
+        <div class="hexagon translate-x-6 hover:scale-125">
+          <img src="https://i.pinimg.com/736x/a5/2d/1d/a52d1d91d6a555844a3f9a3e0e312176.jpg" alt="Destination 3">
+        </div>
+      </div>
+      <div class="w-full lg:w-1/2 px-6 hover:scale-125">
+        <h2 class="text-2xl font-bold mb-4">City Tours</h2>
+        <p class="text-gray-700">Explore vibrant cities filled with culture, history, and unforgettable experiences. Perfect for urban explorers and history buffs!</p>
+      </div>
+    </div>
+    <h2 class="text-3xl font-semibold mt-6 mb-6 text-center">About Us</h2>
+    <p class="text-gray-800 font-sans mb-6 text-center">We, at Dreamscape Destinations, work every second of the day to help people reach their dream destination.We are passionate about travel and dedicated to helping you explore the world in ways that are personalized and meaningful.<br> We believe that travel is not just about seeing new places; it's about creating memories that last a lifetime. Founded by a group of avid travelers, our agency is built on the belief that every trip should be a unique and enriching experience.
+
+      <br>From romantic getaways and family vacations to adventure-filled expeditions and luxurious retreats, we offer a variety of packages designed to suit every interest and budget. Our team consists of seasoned travel experts who are committed to providing you with expert advice, exceptional service, and insider knowledge that will elevate your journey.
+      
+     <br> Whether you're looking to relax on exotic beaches, conquer mountain peaks, or immerse yourself in vibrant cultures, we work tirelessly to ensure every detail of your trip is perfectly arranged. Let Wanderlust Journeys guide you to your next unforgettable experience. We’re here to help you explore the world, one destination at a time!</p>
+    
+    
+    <h2 class="text-3xl font-semibold mt-10 mb-6 text-center">What Our Customers Are Saying</h2>
+    <div class="flex flex-wrap justify-center">
+      <!-- Review 1 -->
+      <div class="review-card">
+        <div class="rating">★★★★★</div>
+        <p>"An unforgettable trip to the beach! The views were spectacular, and everything was taken care of perfectly. Highly recommend!"</p>
+        <p class="name">John Doe</p>
+      </div>
+      <!-- Review 2 -->
+      <div class="review-card">
+        <div class="rating">★★★★★</div>
+        <p>"The mountain adventure was exhilarating! The guides were knowledgeable and friendly. A perfect way to experience the outdoors!"</p>
+        <p class="name">Jane Smith</p>
+      </div>
+      <!-- Review 3 -->
+      <div class="review-card">
+        <div class="rating">★★★★★</div>
+        <p>"City tours were fantastic! I learned so much about the culture and history of the places we visited. Can't wait to book my next trip!"</p>
+        <p class="name">Emily Johnson</p>
+      </div>
+    </div>
+  </section>
+
+ 
+    <footer class="bg-gray-800 py-6 mt-10">
+      <div class="container mx-auto text-center text-white">
+        <p>&copy; 2024 Dreamscape Destinations. All rights reserved.</p>
+        <p class="mt-2">Follow us on 
+          <a href="#" class="text-blue-400 hover:underline">Facebook</a>, 
+          <a href="#" class="text-blue-400 hover:underline">Instagram</a>, and 
+          <a href="#" class="text-blue-400 hover:underline">Twitter</a>.
+        </p>
+      </div>
+    </footer>
+  
+  </body>
+  </html>
+  

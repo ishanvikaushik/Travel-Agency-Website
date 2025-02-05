@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinations</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    
+    .video-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1; /*video in bg*/
+    }
+    .content-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    }
+
+    
+    .card {
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .book-now-button {
+      background-color: #4fd1c5;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .book-now-button:hover {
+      background-color: #38b2ac;
+    }
+
+  </style>
+</head>
+<body class="font-sans bg-gray-100">
+
+
+  <nav class="bg-gray-800">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="index.html" class="text-white text-xl font-bold">Dreamscape Destinations</a>
+      <div class="space-x-4">
+        <a href="index.html" class="text-white hover:underline">Home</a>
+        <a href="destinations.html" class="text-white hover:underline">Destinations</a>
+        <a href="packages.html" class="text-white hover:underline">Packages</a>
+        <a href="blog.html" class="text-white hover:underline">Blog</a>
+        <a href="contact.html" class="text-white hover:underline">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  
+  <header class="relative h-72 overflow-hidden">
+    <video autoplay loop muted class="video-background">
+      <source src="C:\Java prg\Travel Agency\waterfall.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="content-overlay flex items-center justify-center h-full">
+      <h1 class="text-white text-4xl font-bold">Top Destinations</h1>
+    </div>
+  </header>
+
+  <section class="container mx-auto px-4 py-10">
+    <h2 class="text-3xl font-bold mb-6 text-center">Explore Our Featured Destinations</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+     
+      <div class="bg-white shadow-md rounded-lg p-4 hover:scale-125 transition-all relative card">
+        <img src="https://i.pinimg.com/736x/a0/d8/35/a0d8353c5bbaf986daaa0edcaa2b96ca.jpg" alt="Paris" class="rounded-lg">
+        <h3 class="text-xl font-semibold mt-4">Paris, France</h3>
+        <p class="text-gray-600 mt-2">Experience the City of Love and its iconic landmarks.</p>
+
+        
+        <div class="mt-4">
+          <p class="text-lg font-semibold text-gray-800">Price: ₹11,000 per person/day</p>
+          <p class="text-sm text-gray-600">Includes sightseeing, hotels, and flights.</p>
+          <button class="book-now-button mt-4">Book Now</button>
+        </div>
+      </div>
+
+      
+      <div class="bg-white shadow-md rounded-lg p-4 hover:scale-125 transition-all relative card">
+        <img src="https://i.pinimg.com/736x/8c/15/e4/8c15e4383a00311557367a7cc6fad438.jpg" alt="Tokyo" class="rounded-lg">
+        <h3 class="text-xl font-semibold mt-4">Tokyo, Japan</h3>
+        <p class="text-gray-600 mt-2">Dive into the vibrant culture and modern marvels.</p>
+
+       
+        <div class="mt-4">
+          <p class="text-lg font-semibold text-gray-800">Price: ₹9,600 per person/day</p>
+          <p class="text-sm text-gray-600">Includes sightseeing, hotels, and flights.</p>
+          <button class="book-now-button mt-4">Book Now</button>
+        </div>
+      </div>
+
+      
+      <div class="bg-white shadow-md rounded-lg p-4 hover:scale-125 transition-all relative card">
+        <img src="https://i.pinimg.com/736x/ed/d8/40/edd84053da95bdf64003e1f91f4fb3ab.jpg" alt="Shanghai" class="rounded-lg">
+        <h3 class="text-xl font-semibold mt-4">Shanghai, China</h3>
+        <p class="text-gray-600 mt-2">Explore stunning landscapes and diverse wildlife.</p>
+
+        
+        <div class="mt-4">
+          <p class="text-lg font-semibold text-gray-800">Price: ₹10,400 per person/day</p>
+          <p class="text-sm text-gray-600">Includes sightseeing, hotels, and flights.</p>
+          <button class="book-now-button mt-4">Book Now</button>
+        </div>
+      </div>
+
+      
+      <div class="bg-white shadow-md rounded-lg p-4 hover:scale-125 transition-all relative card">
+        <img src="https://i.pinimg.com/736x/2f/9b/9a/2f9b9a881c1d86bec4e53253d8c63d97.jpg" alt="London" class="rounded-lg">
+        <h3 class="text-xl font-semibold mt-4">London, England</h3>
+        <p class="text-gray-600 mt-2">Explore stunning landscapes and diverse wildlife.</p>
+
+        
+        <div class="mt-4">
+          <p class="text-lg font-semibold text-gray-800">Price: ₹9,700 per person/day</p>
+          <p class="text-sm text-gray-600">Includes sightseeing, hotels, and flights.</p>
+          <button class="book-now-button mt-4">Book Now</button>
+        </div>
+      </div>
+
+      
+      <div class="bg-white shadow-md rounded-lg p-4 hover:scale-125 transition-all relative card">
+        <img src="https://i.pinimg.com/736x/29/8f/4e/298f4ed3224d766f1ac2ff2af8761f6e.jpg" alt="Kerala" class="rounded-lg">
+        <h3 class="text-xl font-semibold mt-4">Kerala, India</h3>
+        <p class="text-gray-600 mt-2">Explore stunning landscapes and diverse wildlife.</p>
+
+        
+        <div class="mt-4">
+          <p class="text-lg font-semibold text-gray-800">Price: ₹8,000 per person/day</p>
+          <p class="text-sm text-gray-600">Includes sightseeing, hotels, and flights.</p>
+          <button class="book-now-button mt-4">Book Now</button>
+        </div>
+      </div>
+
+      
+      <div class="bg-white shadow-md rounded-lg p-4 hover:scale-125 transition-all relative card">
+        <img src="https://i.pinimg.com/736x/c5/e2/5c/c5e25c71309e121c70df90722720b7dc.jpg" alt="Moscow" class="rounded-lg">
+        <h3 class="text-xl font-semibold mt-4">Moscow, Russia</h3>
+        <p class="text-gray-600 mt-2">Explore stunning landscapes and diverse wildlife.</p>
+
+        
+        <div class="mt-4">
+          <p class="text-lg font-semibold text-gray-800">Price: ₹11,000 per person/day</p>
+          <p class="text-sm text-gray-600">Includes sightseeing, hotels, and flights.</p>
+          <button class="book-now-button mt-4">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <footer class="bg-gray-800 py-6 mt-10">
+    <div class="container mx-auto text-center text-white">
+      <p>&copy; 2024 Dreamscape Destinations. All rights reserved.</p>
+      <p class="mt-2">Follow us on 
+        <a href="#" class="text-blue-400 hover:underline">Facebook</a>, 
+        <a href="#" class="text-blue-400 hover:underline">Instagram</a>, and 
+        <a href="#" class="text-blue-400 hover:underline">Twitter</a>.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
