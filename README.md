@@ -36,10 +36,27 @@ README.md            # Project documentation
 - **Packages & Destinations:** Edit the HTML to add or modify travel packages and destinations.
 - **Styling:** Customize Tailwind classes or add your own CSS for a unique look.
 
+## ScreenShots
+HomePage-
+<img width="2879" height="1501" alt="image" src="https://github.com/user-attachments/assets/1a52ea11-063b-4b69-b55d-7d82b9dbf4a4" />
+<img width="2879" height="1497" alt="image" src="https://github.com/user-attachments/assets/32008015-98bf-485c-a922-8abc7b65994f" />
+<img width="2879" height="1495" alt="image" src="https://github.com/user-attachments/assets/d5c16272-d634-4b86-a5f5-d75339e6138a" />
+<img width="2879" height="1486" alt="image" src="https://github.com/user-attachments/assets/ebd2eb67-7427-4615-97a6-439a625c2833" />
+Destinations-
+<img width="2879" height="1502" alt="image" src="https://github.com/user-attachments/assets/3b97b65b-7c21-4ef7-98f1-8ca0f2e5285a" />
+<img width="2879" height="1491" alt="image" src="https://github.com/user-attachments/assets/1e2e57cd-e16c-4d31-a94d-edcb5d4fc7ad" />
+Packages-
+<img width="2845" height="1484" alt="image" src="https://github.com/user-attachments/assets/12d9f867-1167-448e-ac36-fe392ce1959a" />
+<img width="2807" height="1474" alt="image" src="https://github.com/user-attachments/assets/00161dc3-14d3-4957-9420-002e3c09d481" />
+Blogs-
+<img width="2833" height="1496" alt="image" src="https://github.com/user-attachments/assets/51e1f816-ac25-48d0-83c4-b27ea6abcc4d" />
+Contact page-
+<img width="2830" height="1478" alt="image" src="https://github.com/user-attachments/assets/912a423d-7187-41b8-b975-bf7401dbd8c8" />
+
 ## Demo
 
 You can view a working demo video here:  
-[Demo Video](https://private-user-images.githubusercontent.com/150155765/425767385-f65247ad-b748-4bc8-acb9-dfc91cad54dc.mp4)
+[Demo Video](https://dreamscape-destination.netlify.app/)
 
 ## Credits
 
